@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TriviaGame</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/game.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body>
+    <div id="wrapper">
+
+        <div id="display1">Legally Blonde Trivia</div>
+
+        <div id="display">00:00</div>
+  
+        <!-- Div containing our stopwatch controls -->
+        <div id="buttons">
+        <!--This button will be at the top of the game and start the game timer-->  
+        <button id="start">Start</button>
+             
+        </div>
+
+        <div id="count-down"></div>
+
+        <!--This container holds the actual Trivia Questions-->
+        <div id="questionsContainer">
+
+            <!--These questions are set up in a FORM-->
+            <form id="questions-display" name="questions-form" onsubmit="return submitAnswers()"> 
+                
+                <h3>What is the name of Elle Wood's dog?</h3>
+                    <input type="radio" name="q1" value="a" id="q1a">Mitzy
+                    <input type="radio" name="q1" value="b" id="q1b">Bruiser
+                    <input type="radio" name="q1" value="c" id="q1c">Bitsy
+                    <input type="radio" name="q1" value="d" id="q1d">Boots
+                
+                
+                <h3>What is the name of Elle Wood's college boyfriend?</h3>
+                <input type="radio" name="q2" value="a" id="q2a">William
+                <input type="radio" name="q2" value="b" id="q2b">Wallace
+                <input type="radio" name="q2" value="c" id="q2c">Skip
+                <input type="radio" name="q2" value="d" id="q2d">Warren
+                
+                
+                
+                
+                <h3>What is the name of Elle Wood's sorority?</h3>
+                <input type="radio" name="q3" value="a" id="q3a">Kappa Nu
+                <input type="radio" name="q3" value="b" id="q3b">Nu Delta
+                <input type="radio" name="q3" value="c" id="q3c">Delta Nu
+                <input type="radio" name="q3" value="d" id="q3d">Delta Mu
+                
+                
+                
+                <h3>What Post Grad University does Elle attend?</h3>
+                <input type="radio" name="q4" value="a" id="q4a">U of Chicago Medical School
+                <input type="radio" name="q4" value="b" id="q4b">Harvard Medical School
+                <input type="radio" name="q4" value="c" id="q4c">U of Chicago Law School
+                <input type="radio" name="q4" value="d" id="q4d">Harvard Law School
+                
+                
+                
+                <h3>Elle Woods stated "the rules of ______ are simple and finite.</h3>
+                <input type="radio" name="q5" value="a" id="q5a">Make up
+                <input type="radio" name="q5" value="b" id="q5b">Fashion
+                <input type="radio" name="q5" value="c" id="q5c">Hair Care
+                <input type="radio" name="q5" value="d" id="q5d">Shoe Collecting
+                
+                </form>
+                    <input type="submit" id="submit-button" value= "Submit Answers">
+                
+                
+                    </div>
+                
+                    <div id="results"></div>
+                
+  
+      </div>
+  
+      <!-- jQuery -->
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  
+      <!-- Script -->
+      <script type="text/javascript" src="assets/js/game.js"></script>
+      
+    
+</body>
+</html>
